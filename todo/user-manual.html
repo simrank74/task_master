@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Manual - TaskMaster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .manual-container {
+            max-width: 1000px;
+            margin: 8rem auto 4rem;
+            padding: 2rem;
+        }
+
+        .manual-section {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 24px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .manual-section h2 {
+            color: var(--text-color);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .manual-section h3 {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .manual-section p {
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .manual-section ul {
+            list-style: none;
+            margin: 1rem 0;
+        }
+
+        .manual-section li {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+            position: relative;
+            color: var(--text-light);
+        }
+
+        .manual-section li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-size: 1.5rem;
+        }
+
+        .manual-section .note {
+            background: #f0f9ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .manual-section .tip {
+            background: #f0fdf4;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .manual-section img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin: 1rem 0;
+            box-shadow: var(--shadow);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .manual-container {
+                padding: 1rem;
+                margin-top: 6rem;
+            }
+
+            .manual-section {
+                padding: 1.5rem;
+            }
+
+            .manual-section h2 {
+                font-size: 1.75rem;
+            }
+
+            .manual-section h3 {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-tasks"></i>
+                TaskMaster
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="user-manual.html">User Manual</a></li>
+                <li><a href="login.php" class="btn-login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="manual-container">
+        <section class="manual-section">
+            <h2><i class="fas fa-book"></i> Getting Started with TaskMaster</h2>
+            <p>Welcome to TaskMaster! This guide will help you get started with our task management application and make the most of its features.</p>
+            
+            <h3>1. Creating an Account</h3>
+            <ul>
+                <li>Click the "Sign Up" button on the homepage</li>
+                <li>Fill in your email address and create a secure password</li>
+                <li>Verify your email address to activate your account</li>
+                <li>Log in with your credentials</li>
+            </ul>
+
+            <div class="note">
+                <strong>Note:</strong> Keep your password secure and never share it with anyone.
+            </div>
+
+            <h3>2. Managing Your Tasks</h3>
+            <h4>Adding a New Task</h4>
+            <ul>
+                <li>Click the "Add Task" button in the dashboard</li>
+                <li>Enter the task title and description</li>
+                <li>Set a priority level (High, Medium, Low)</li>
+                <li>Choose a due date</li>
+                <li>Click "Add Task" to save</li>
+            </ul>
+
+            <h4>Editing Tasks</h4>
+            <ul>
+                <li>Click the edit icon on any task card</li>
+                <li>Modify the task details as needed</li>
+                <li>Click "Save Changes" to update</li>
+            </ul>
+
+            <h4>Deleting Tasks</h4>
+            <ul>
+                <li>Click the delete icon on the task card</li>
+                <li>Confirm the deletion in the popup</li>
+            </ul>
+
+            <div class="tip">
+                <strong>Tip:</strong> Use the priority levels to organize your tasks effectively. High priority tasks will be highlighted in red.
+            </div>
+
+            <h3>3. Task Organization</h3>
+            <h4>Sorting Tasks</h4>
+            <ul>
+                <li>Use the "Sort by Priority" button to arrange tasks by importance</li>
+                <li>Use the "Sort by Date" button to organize tasks by due date</li>
+            </ul>
+
+            <h4>Filtering Tasks</h4>
+            <ul>
+                <li>Use the priority filter to show specific priority levels</li>
+                <li>Use the status filter to show completed or pending tasks</li>
+            </ul>
+
+            <h3>4. Task Status</h3>
+            <ul>
+                <li>Click the status button on a task to mark it as complete</li>
+                <li>Completed tasks will be moved to the bottom of the list</li>
+                <li>You can toggle the status back to pending if needed</li>
+            </ul>
+
+            <h3>5. User Interface</h3>
+            <h4>Dark Mode</h4>
+            <ul>
+                <li>The application automatically switches to dark mode based on your system preferences</li>
+                <li>Dark mode reduces eye strain in low-light conditions</li>
+            </ul>
+
+            <h4>Responsive Design</h4>
+            <ul>
+                <li>TaskMaster works on all devices - desktop, tablet, and mobile</li>
+                <li>The interface automatically adjusts to your screen size</li>
+            </ul>
+
+            <div class="cta-buttons">
+                <a href="signup.php" class="btn-primary">Create Account</a>
+                <a href="login.php" class="btn-secondary">Login</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TaskMaster</h3>
+                    <p>Your personal task management solution for better productivity and organization.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="user-manual.html">User Manual</a></li>
+                        <li><a href="login.php">Login</a></li>
+                        <li><a href="signup.php">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:support@taskmaster.com">support@taskmaster.com</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TaskMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
